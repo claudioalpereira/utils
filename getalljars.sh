@@ -10,6 +10,3 @@ while read in; do aws s3 cp "$in" s3://smo-log4j-test/`hostname`/"$in" ; done < 
 echo "Cleaning up..."
 rm .aws/credentials
 rm manifest.txt
-
-# harakiri
-rm -- "$0"
